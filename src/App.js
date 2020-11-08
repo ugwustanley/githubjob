@@ -14,14 +14,7 @@ const App = () =>{
 
   useEffect(() => {
    setData([
-    {
-     name:'Ugwu Stanley',
-     age: 13
-    },
-    {
-     name:'Ozioko Chioma',
-     age: 17
-    },
+   ...data,
     {
       name:'Eze ifechi',
       age: 17,
