@@ -4,11 +4,11 @@ import Name from './Names'
 const App = () =>{
   const [data , setData] = useState([
     {
-     name:'ugwu stanley',
+     name:'Ijeoma Belinda',
      age: 13,
     },
     {
-     name:'ozioko chioma',
+     name:'Ozioko Chioma',
      age: 17,
     }
   ])
