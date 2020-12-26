@@ -1,0 +1,145 @@
+.jobdetail{
+    width:100%;
+    background-color: inherit;
+    overflow-x:hidden;
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap:2rem;
+    @media(max-width:800px){
+        grid-template-columns: 1fr;
+        grid-gap:1rem;
+    }
+    .section1{
+        width:100%;
+        overflow-x: hidden !important;
+        background-color: inherit;
+        a{
+            color: #1E86FF;
+            width:100%;
+         }
+        .back_btn{
+             font-family: Poppins;
+             font-style: normal;
+             font-weight: 500;
+             font-size: 14px;
+             color: #1E86FF;
+             border:none;
+             transform: translateX(-9px);
+             margin-top:7px;
+             cursor: pointer;
+             background: none;
+             outline:none;
+             text-decoration: none;
+             
+            .back__arrow{
+                transform: rotate(180deg) translateY(-10px);
+                width:30px;
+            }
+        }
+        &__header{
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #B9BDCF;
+            margin-top:20px;
+        }
+        &__description{
+            width:100%;
+            overflow: hidden;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            color: #334680;
+           
+        }
+    }
+    .section2{
+        width:100%;
+        overflow-x: hidden;     
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+        color: #334680;  
+        a{
+          color: #1E86FF;
+        }
+        &__company{
+            display: grid;
+            grid-template-columns: 42px 1fr;
+            .company__logo{
+                width:100%;
+                height:40px;
+                border-radius:4px;
+                
+
+            }
+            &__data{
+                margin-left:10px;
+                h3{
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    color: #334680;
+                    margin-top:0px;
+                }
+                .created_at{
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    margin-top:-16px;
+                    color: #B9BDCF;
+                }
+               
+            } 
+        }
+        .time{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            margin-top:-20px;
+            margin-bottom:20px;
+            color: #B9BDCF;
+           @media(max-width:600px){
+               margin-top:0px;
+           }
+        }
+        h2{
+            display: inline-block;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            color: #334680;
+        } 
+        button{
+            display:inline;
+            border:none;
+            outline:none;
+            font-family: Roboto;
+            color: #334680;
+            background-color: transparent;
+            font-size:12px;
+            padding:5px;
+            font-weight: bold;
+            border: 1px solid #334680;
+            box-sizing: border-box;
+            border-radius: 4px;
+            margin:10px;
+            transform: translateY(-2px);
+            
+            @media(max-width:600px){
+                display:block;
+                margin:0px;
+                transform: translateY(-15px);
+            }
+        }
+    }
+}

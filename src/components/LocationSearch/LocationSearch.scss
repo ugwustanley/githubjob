@@ -1,0 +1,31 @@
+.locationsearch{
+    width:100%;
+    max-width: 379px;
+    height: 48px;
+    background: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    display:grid;
+    grid-template-columns: 50px 1fr;
+    &__iconbox{
+        display:grid;
+        place-content: center;
+        opacity: .4;
+    }
+    &__input{
+        font-size: 1rem;
+        outline:none;
+        border:none;
+        padding-right:1rem;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+       
+
+        &::placeholder{
+            color: #B9BDCF;
+            font-size: 12px;
+        }
+    }
+}

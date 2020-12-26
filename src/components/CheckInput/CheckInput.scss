@@ -1,0 +1,107 @@
+.checkinput{
+    
+    .fulltime{
+        position:relative;
+        transform: translateX(-4px);
+    
+        
+        &__input{
+            position: relative;
+             cursor: pointer;
+             &:before{
+                content: "";
+                display: block;
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                top: -2px;
+                left: 0;
+                border: 2px solid #B9BDCF;
+                box-sizing: border-box;
+                border-radius: 3px;
+                background-color: white;
+             }
+             &:checked:before{
+                 background:#1E86FF;
+                 border:2px solid #1E86FF;
+             }
+             &:checked:after{
+                content: "";
+                display: block;
+                width: 5px;
+                height: 10px;
+                border: solid #fff;
+                border-width: 0 3px 3px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+                position: absolute;
+                top: 0;
+                left: 6px;
+             }
+        }
+      
+        
+        &__label{
+          display: inline-block;
+          padding-left:10px;
+          font-size: 14px;
+          font-family: 'poppins';
+        }
+    }
+
+    &__header{       
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      color: #B9BDCF;
+      padding-top:10px;
+    }
+    .city{
+        position:relative;
+        transform: translateX(-7px);
+        margin-top:1rem;
+
+        &__input{
+            position: relative;
+             cursor: pointer;
+             &:before{
+                content: "";
+                display: block;
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                top: -2px;
+                left: 0;
+                border: 2px solid #B9BDCF;
+                box-sizing: border-box;
+                border-radius: 50%;
+                background-color: white;
+             }
+             &:checked:before{
+                 background:#FFF;
+                 border:2px solid #1E86FF;
+             }
+             &:checked:after{
+                content: "";
+                display: block;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: #1E86FF;
+                position: absolute;
+                top: calc(50% - 3px);
+                left: calc(50% - 2px);
+             }
+        }
+      
+        
+        &__label{
+          display: inline-block;
+          padding-left:10px;
+          font-size: 14px;
+          font-family: 'poppins';
+        }
+    }
+}
